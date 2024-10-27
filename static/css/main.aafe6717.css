@@ -1,0 +1,2 @@
+.first_side{align-items:center;display:flex;justify-content:space-around}.first_side img{height:4rem;width:15rem}.last_side{grid-gap:10px;display:grid;gap:10px;grid-template-columns:repeat(7,1fr);margin:0 auto;width:88%}.card{border:1px solid #ccc;border-radius:5px;padding:10px;text-align:center;transition:background-color .3s}.card:hover{background-color:#f0f0f0}
+/*# sourceMappingURL=main.aafe6717.css.map*/
