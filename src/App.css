@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .first_side{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+}
+.first_side img {
+  height: 4rem;
+  width: 15rem;
 }
 
-.App-link {
-  color: #61dafb;
+.last_side{
+  margin-left: auto;
+  margin-right: auto;
+  width: 88%;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+.card{
+  border: solid;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.first_side {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; /* محاذاة العناصر في المنتصف عموديًا */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.first_side img {
+  height: 4rem;
+  width: 15rem;
+}
+
+.last_side {
+  margin: 0 auto;
+  width: 88%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.card {
+  border: solid 1px #ccc; /* إضافة لون الحدود */
+  text-align: center; /* محاذاة النص في الوسط */
+  padding: 10px; /* إضافة حشوة داخل المربع */
+  border-radius: 5px; /* جعل الزوايا مدورة */
+  transition: background-color 0.3s; /* إضافة تأثير عند التمرير */
+}
+
+.card:hover {
+  background-color: #f0f0f0; /* تغيير لون الخلفية عند التمرير */
 }
